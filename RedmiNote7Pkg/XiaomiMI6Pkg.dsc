@@ -16,7 +16,7 @@
 #
 ################################################################################
 [Defines]
-  PLATFORM_NAME                  = XiaomiMI6Pkg
+  PLATFORM_NAME                  = RedmiNote7Pkg
   PLATFORM_GUID                  = 28f1a3bf-193a-47e3-a7b9-5a435eaab2ee
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010019
@@ -24,13 +24,13 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = XiaomiMI6Pkg/XiaomiMI6Pkg.fdf
+  FLASH_DEFINITION               = RedmiNote7Pkg/RedmiNote7Pkg.fdf
 
-!include XiaomiMI6Pkg/CommonDsc.dsc.inc
+!include RedmiNote7Pkg/CommonDsc.dsc.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
-  ArmPlatformLib|XiaomiMI6Pkg/Library/XiaomiMI6Lib/XiaomiMI6Lib.inf
+  ArmPlatformLib|RedmiNote7Pkg/Library/RedmiNote7Lib/RedmiNote7Lib.inf
   CompilerIntrinsicsLib|ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   UefiBootManagerLib|MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
@@ -43,7 +43,7 @@
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   BootLogoLib|MdeModulePkg/Library/BootLogoLib/BootLogoLib.inf
 
-  SerialPortLib|XiaomiMI6Pkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
+  SerialPortLib|RedmiNote7Pkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
   RealTimeClockLib|EmbeddedPkg/Library/VirtualRealTimeClockLib/VirtualRealTimeClockLib.inf
   TimeBaseLib|EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf
 
@@ -66,8 +66,8 @@
   # SimpleFbDxe
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
 
-  SerialPortLib|XiaomiMI6Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
-  PlatformBootManagerLib|XiaomiMI6Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+  SerialPortLib|RedmiNote7Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+  PlatformBootManagerLib|RedmiNote7Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
 
 [LibraryClasses.common.SEC]
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -137,9 +137,9 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
 
-  gXiaomiMI6PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9d400000
-  gXiaomiMI6PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-  gXiaomiMI6PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1920
+  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9d400000
+  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1920
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
@@ -202,8 +202,8 @@
   #
   EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
 
-  XiaomiMI6Pkg/XiaomiMI6Dxe/XiaomiMI6Dxe.inf
-  XiaomiMI6Pkg/SimpleFbDxe/SimpleFbDxe.inf
+  RedmiNote7Pkg/RedmiNote7Dxe/RedmiNote7Dxe.inf
+  RedmiNote7Pkg/SimpleFbDxe/SimpleFbDxe.inf
 
   #
   # USB Host Support
@@ -241,12 +241,12 @@
   MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-#  XiaomiMI6Pkg/AcpiTables/AcpiTables.inf
+#  RedmiNote7Pkg/AcpiTables/AcpiTables.inf
 
   #
   # SMBIOS Support
   #
-  XiaomiMI6Pkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  RedmiNote7Pkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
 
   #
@@ -269,7 +269,7 @@
       NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   }
-  XiaomiMI6Pkg/Drivers/LogoDxe/LogoDxe.inf
+  RedmiNote7Pkg/Drivers/LogoDxe/LogoDxe.inf
 
   ShellPkg/Application/Shell/Shell.inf {
     <LibraryClasses>

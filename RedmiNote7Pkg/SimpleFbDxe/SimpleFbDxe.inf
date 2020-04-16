@@ -16,7 +16,7 @@
   MdeModulePkg/MdeModulePkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
-  XiaomiMI6Pkg/XiaomiMI6Pkg.dec
+  RedmiNote7Pkg/RedmiNote7Pkg.dec
 
 [LibraryClasses]
   BaseLib
@@ -35,9 +35,9 @@
   gEfiCpuArchProtocolGuid
 
 [FixedPcd]
-  gXiaomiMI6PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
-  gXiaomiMI6PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gXiaomiMI6PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gRedmiNote7PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
 
 [Guids]
   gEfiMdeModulePkgTokenSpaceGuid
