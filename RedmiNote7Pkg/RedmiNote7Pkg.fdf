@@ -366,28 +366,28 @@ READ_LOCK_STATUS   = TRUE
   #
   # ACPI Support
   #
-#  INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
-#  INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
-#  INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
+  INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
+  INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
+  INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
 #  INF RuleOverride = ACPITABLE RedmiNote7Pkg/AcpiTables/AcpiTables.inf
 
-#  FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/DBG2.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/DSDT.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/FACS.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/FADT.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/GTDT.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/MADT.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/MCFG.aml
-#	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/CSRT.aml
-#	SECTION UI = "AcpiTables"
-#  }
+  FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/DBG2.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/DSDT.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/FACS.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/FADT.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/GTDT.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/MADT.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/MCFG.aml
+	SECTION RAW = RedmiNote7Pkg/AcpiTables/8998/CSRT.aml
+	SECTION UI = "AcpiTables"
+  }
 
   #
   # SMBIOS Support
   #
-#  INF RedmiNote7Pkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
-#  INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
+  INF RedmiNote7Pkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
 
   #
   # UEFI applications
@@ -403,7 +403,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
   INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
   INF MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
-  #INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
+  INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   INF MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
   INF MdeModulePkg/Application/UiApp/UiApp.inf
