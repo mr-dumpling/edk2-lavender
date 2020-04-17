@@ -410,7 +410,7 @@ READ_LOCK_STATUS   = TRUE
   INF RedmiNote7Pkg/Drivers/LogoDxe/LogoDxe.inf
 
   #
-  #Binary DXE drivers from Xiaomi sagit MSM8998
+  #Binary DXE drivers from Xiaomi lavender SDM660
   #
 
 #  FILE DRIVER = 90a49afd-422f-08ae-9611-e788d3804845 {
